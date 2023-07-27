@@ -1,32 +1,657 @@
-.nav{
-    background-color: aqua;
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    justify-content:space-between ;
-    padding-left: 60px;
-    padding-right: 60px;
+html {
+    scroll-behavior: smooth;
 }
 
-.nav .left ul{
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.imgback {
+    background-image: url(bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.nav {
+    background-color: rgba(255, 255, 255, .15);
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav .right {
+    padding-left: 5%;
+}
+
+.nav .left {
+    margin-right: 5%;
+    color: white;
+    font-weight: bolder;
+}
+
+.nav .left li a:link {
+    color: white;
+}
+
+.nav .left li a:visited {
+
+    color: white;
+
+}
+
+.nav .left ul {
     list-style: none;
     text-decoration: none;
     display: flex;
     flex-direction: row;
 }
 
-.nav .left ul li{
-    padding-left: 20px;
-}
-.maincontent{
-    background-color:bisque;
-    height: 93vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.maincontent .text p{
+.nav .left ul li {
+    padding-left: 30px;
     display: block;
 }
 
+.maincontent {
+    height: 95vh;
+    display: inline-block;
+    padding: 0px;
+    margin: 0px;
+}
 
+.maincontent .text {
+    font-family: 'Oswald', sans-serif;;
+    display: flex;
+    justify-content: center;
+    padding-top: 10%;
+    color: white;
+}
+.maincontent .text p{
+    font-size:400%;
+
+}
+.maincontent .text  #naran{
+    color:rgb(230, 4, 4);
+}
+
+.maincontent .text2 {
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    margin-left: 15%;
+    margin-right: 15%;
+    font-size: 200%;
+    text-align: justify;
+    text-transform: uppercase;
+    font-style: oblique;
+}
+
+.maincontent .text2 #btn {
+    position: absolute;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+#btn {
+    margin-left: 45%;
+    padding: 15px;
+    padding-left: 70px;
+    padding-right: 70px;
+    border-radius: 40%;
+    background-color: transparent;
+    border-width: 5px;
+    color: white;
+    font-weight: bolder;
+    transition: 0.25s ease-in-out;
+}
+
+#btn:hover {
+    /* background-color: rgb(42, 185, 185); */
+    background-color:rgb(230, 4, 4);
+
+}
+
+/* Second page
+************************************************************************** */
+
+.secondpage {
+    display: inline-block;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    background-color: rgba(255, 228, 196, 0.904);
+}
+
+.secondpage #head {
+    font-size: 400%;
+}
+
+.secondpage h1 {
+    font-size: 250%;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+}
+
+.secondpage .content {
+    margin-top: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+}
+
+.secondpage .content .content1 img,
+.content2 img,
+.content3 img {
+    /* width: 500px; */
+    width:80%;
+    height: 500px;
+    overflow: hidden;
+}
+.secondpage .content .content1 img{
+    width:85%;
+    height: 500px;
+    overflow: hidden;
+}
+.secondpage .content .content3 img{
+    width:105%;
+    height: 500px;
+    overflow: hidden;  
+}
+
+
+.secondpage .content .content2,
+.content3 {
+    z-index: 0;
+    padding-left: 100px;
+}
+
+.secondpage .content .content1,
+.content2 {
+    filter: brightness(90%);
+    position: relative;
+}
+
+.secondpage .content .text1 {
+    z-index: 3;
+    position: absolute;
+    top: 37%;
+    left: 7%;
+    background-color: transparent;
+}
+
+.secondpage .content .text1 h1,
+.text2 h1,
+.text3 h1 {
+    
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+}
+.secondpage .content .text2{
+    margin-left: 4%;
+}
+.secondpage .content .text3{
+    margin-left: 10%;
+}
+.secondpage .content .text1 #btn1,
+.text2 #btn2,
+.text3 #btn3 {
+    transition: all 0.5s ease-in-out;
+    z-index: 4;
+    margin-left: 45px;
+    padding: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+    background-color: rgb(42, 185, 185);
+    color: white;
+    font-weight: bolder;
+}
+
+.secondpage .content .text2 {
+    z-index: 5;
+    position: absolute;
+    top: 37%;
+    left: 39%;
+    background-color: transparent;
+}
+
+.secondpage .content .text2 #btn2 {
+
+    margin-left: 65px;
+}
+
+.secondpage .content .content3 {
+    filter: brightness(70%);
+    z-index: 0;
+    padding-left: 50px;
+}
+
+.secondpage .content .text3 {
+    z-index: 6;
+    position: absolute;
+    top: 37%;
+    left: 68%;
+    background-color: transparent;
+}
+
+.secondpage .content .text3 #btn3 {
+    margin-left: 90px;
+}
+
+.secondpage .content .text1 #btn1:hover {
+    /* background-color: rgba(0, 255, 136, 0.829); */
+    background-color:rgb(230, 4, 4,0.829);
+
+}
+
+.secondpage .content .text2 #btn2:hover {
+    /* background-color: rgba(0, 255, 136, 0.829); */
+    background-color:rgb(230, 4, 4,0.829);
+
+}
+
+.secondpage .content .text3 #btn3:hover {
+    /* background-color: rgba(0, 255, 136, 0.829); */
+    background-color:rgb(230, 4, 4,0.829);
+
+}
+
+
+/* two pages completed
+*************************************************************************************** */
+.thirdpage {
+    background-image: url(10.jpg);
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.thirdpage h1 {
+    font-size: 300%;
+    font-family: 'Oswald', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+.thirdpage .firstsection {
+    margin-left: 7%;
+    margin-right: 7%;
+}
+
+.thirdpage .firstsection .img1 {
+    display: inline;
+    position: absolute;
+    width: 23%;
+    height: 40%;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 5px solid black;
+}
+
+.thirdpage .firstsection .img1 img {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.thirdpage .firstsection .des1 {
+    align-items: center;
+    margin-left: 30%;
+}
+
+.thirdpage .firstsection .des1 h2 {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-size: 250%;
+}
+
+.thirdpage p,
+.thirdpage .firstsection .des1 p {
+    /* font-size: 25px; */
+    font-size: 160%;
+    font-style: oblique;
+    font-weight: bolder;
+    text-align: justify;
+
+}
+
+.thirdpage p {
+    font-size: 30px;
+    margin-left: 7%;
+    margin-right: 7%;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+/* *******************************************************************x */
+.fourthpage {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(255, 228, 196, 0.904);
+
+}
+
+.fourthpage p {
+    /* font-size: 25px; */
+    font-size: 160%;
+    font-family: 'Oswald', sans-serif;
+    font-style: oblique;
+    font-weight: bolder;
+    text-align: justify;
+
+}
+
+.fourthpage .secondsection .des2 {
+    align-items: center;
+    margin-left: 7%;
+    width: 53%;
+}
+
+.fourthpage .secondsection .img2 {
+    display: inline;
+    width: 23%;
+    height: 40%;
+    overflow: hidden;
+    position: absolute;
+    margin-left: 65%;
+    margin-top: 5%;
+    border-radius: 10px;
+    border: 5px solid black;
+}
+
+.fourthpage .secondsection .img2 img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    transform: scale(1.5);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.fourthpage .thirdsection {
+    margin-right: 7%;
+    margin-left: 7%;
+    align-items: center;
+}
+
+.fourthpage .secondsection .des2 h2 {
+    font-size: 250%;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+}
+
+.fourthpage .thirdsection .img3 {
+    /* margin-top: 25px; */
+    margin-top: 3%;
+    display: inline;
+    width: 23%;
+    height: 40%;
+    overflow: hidden;
+    position: absolute;
+    /* padding-left: 15px; */
+    padding-left: 1%;
+    border-radius: 10px;
+    border: 5px solid black;
+}
+
+.fourthpage .thirdsection .img3 img {
+    width: 100%;
+    height: 100%;
+    transform: scale(1.5);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.fourthpage .thirdsection .des3 {
+    position: absolute;
+    margin-left: 30%;
+    /* margin-top: 40px; */
+    margin-top: 3%;
+    width: 52%;
+
+}
+
+.fourthpage .des3 h2 {
+    font-size: 250%;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+}
+
+/* ************************************************************************************ */
+
+.fifthpage {
+    background-image: url(bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    width: 100%;
+    height: 100vh;
+}
+
+.fifthpage .heading {
+    font-family: 'Oswald', sans-serif;
+    display: flex;
+    justify-content: center;
+    font-size: 160%;
+    color: white;
+}
+.fifthpage .form{
+    display: flex;
+    font-family: 'Oswald', sans-serif;
+
+    /* margin-top: 1%;  */
+}
+.fifthpage .form .form1 {
+    display: flex;
+    position: relative;
+    width:50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.349), 0 6px 20px 0 rgba(0, 0, 0, 0.288);
+}
+.fifthpage .form .form1 form h1{
+    font-family: 'Oswald', sans-serif;
+
+    display: flex;
+    flex-direction: row;
+    justify-content:end;
+    /* margin-left: 10%; */
+    margin-left: 125%;
+    text-align: center;
+    color: whitesmoke;
+    font-weight: bolder;
+
+}
+.fifthpage .form .form1 table {
+    align-items: center;
+    position: relative;
+    padding-left: 50%;
+    
+}
+
+.fifthpage .form .form1 form table tr {
+    border-spacing: 5%;
+    
+}
+.fifthpage .form .form1 form table tr td{
+    padding-top: 6%;
+    color: black;
+    font-weight: bolder;
+    font-size: x-large;
+    font-style: oblique;
+   
+}
+.fifthpage .form .form1 form table tr td #ret,#arr{
+    width:100%;
+}
+
+.fifthpage .form .form1 form table tr td #name,#mail,#phone,#number,#arr,#ret{
+    padding: 8%;
+}
+
+.fifthpage .form .form1 form #btnsmt{
+    padding: 4%;
+    padding-left: 8%;
+    padding-right:8% ;
+    text-transform: uppercase;
+    background-color: rgb(42, 185, 185);
+    color: white;
+    font-weight: bolder;
+    transition: all 0.5s ease-in-out;
+    margin-left: 130%;
+    margin-top: 10%;
+    margin-bottom: 20%;
+}
+.fifthpage .form .form1 form #btnsmt:hover{
+    background-color:rgb(230, 4, 4,0.829);
+
+}
+.fifthpage .form .form2{
+    position: absolute;
+    margin-left: 65%;
+}
+
+.fifthpage .form .form2 img{
+    /* margin-top:15% ; */
+    width: 90%;
+}
+/* *************************************************************************************************** */
+.sixthpage {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.sub {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    color: white;
+    width: 100%;
+    background-color: rgb(42, 185, 185);
+
+}
+
+.sub .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sub .content h1 {
+    text-transform: uppercase;
+    font-size: 225%;
+    /* font-size: 45px; */
+}
+
+.sub .content p {
+    font-size: 135%;
+}
+
+.sub p {
+    font-size: 20px;
+}
+
+.sub .in {
+    padding-top: 1%
+}
+
+.sub .in input {
+    padding: 15px;
+}
+
+.sub .in #submit {
+    color: white;
+    background-color: rgb(42, 185, 185);
+    border-width: 3px;
+    padding: 9px;
+    padding-left: 13px;
+    padding-right: 13px;
+    border-color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.sub p {
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.849);
+
+}
+
+.footer h3 {
+    padding-top: 1%;
+
+}
+
+.footer .gallery {
+    height: 30vh;
+    overflow: hidden;
+    display: flex;
+    padding-top: 0.5%;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.footer .gallery img {
+
+    width: 15%;
+    height: 100%;
+
+}
+
+
+.footer p {
+    text-align: justify;
+    font-size: 20px;
+}
+
+.footer .logo {
+    margin-top: 0.5%;
+    align-content: center;
+    justify-content: center;
+}
+
+.footer .logo img {
+    width: 40px;
+}
+
+.footer .logo #t {
+    padding-top: 10px;
+    padding-left: 15px;
+}
+
+.footer .end p {
+    align-content: center;
+    text-align: justify;
+    margin-left: 1%;
+    margin-right: 1%;
+}
